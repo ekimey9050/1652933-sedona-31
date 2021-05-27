@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="Sedona" content="">
+  <link rel="icon" href="Favicon.ico">
   <title>Sedona</title>
 </head>
 
@@ -15,7 +16,7 @@
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
-        <li><a href="blank.html">Гостиница</a></li>
+        <li><a href="catalog.html">Гостиницы</a></li>
       </ul>
 
     </nav>
@@ -24,9 +25,8 @@
   <main>
     <section>
       <h1>SEDONA</h1>
-      <img src="image/mainImg.png" alt="Главное изображение города Седона" width="1200" height="453">
-      <!--SVG???-->
-      <img src="image/EdgeMain.png" alt="Край главного изображения" width="1200" height="57">
+      <img src="image/mainImg.jpg" alt="Главное изображение города Седона" width="1200" height="453">
+
     </section>
     <section>
       <h3>Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
@@ -41,14 +41,17 @@
     <section>
       <ul>
         <li>
+          <img src="image/house.svg" width="74.69" height="72" alt="Рисунок дома">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
         <li>
+          <img src="image/food.svg" width="74.07" height="69.96" alt="Еда, бургер">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li>
+          <img src="image/souvenirs.svg" width="63.98" height="76" alt="Подарок, сувенир">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </li>
@@ -86,11 +89,11 @@
       <form action="https://echo.htmlacademy.ru" method="POST">
         <p><label for="datearrival">Дата заезда:</label>
           <input type="text" id="datearrival" value="24 апреля 2017">
-          <img src="https://via.placeholder.com/21x22.04" alt="Календарь">
+          <img src="image/calendar.svg" alt="Календарь">
         </p>
         <p><label for="dateexit">Дата выезда:</label>
           <input id="dateexit" type="text" value="4 июля 2017">
-          <img src="https://via.placeholder.com/21x22.04" alt="Календарь">
+          <img src="image/calendar.svg" alt="Календарь">
         </p>
         <p><label for="adults">Взрослые:</label>
           <button type="button">-</button>
@@ -106,6 +109,8 @@
     </section>
     <section>
       <h4>Карта поиска гостиницы</h4>
+      <img src="image/map.jpg" width="1199" height="473"
+        alt="Местоположение Седона, между пересечением дорог: 89А и 179">
     </section>
   </main>
   <footer class="main-footer">
@@ -119,11 +124,10 @@
     <section>
       <h4>Контакты в социальных сетях</h4>
       <ul>
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Фейсбук</a>
-        </li>
+        <li><a href="#"><img src="image/twitter.svg" width="46" height="48" alt="Твиттер"></a></li>
+        <li><a href="#"><img src="image/facebook.svg" width="46" height="48" alt="Фейсбук"></a></li>
         <li>
-          <a href="#">Ютюб</a>
+          <a href="#"><img src="image/youtube.svg" width="46" height="48" alt="Ютюб"></a>
         </li>
       </ul>
     </section>
@@ -132,7 +136,6 @@
       <p>
         Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="image/logo_htmlacademy.png"
             alt="Сайт htmlacademy"></a>
-        <!--SVG изображение-->
       </p>
     </section>
   </footer>
