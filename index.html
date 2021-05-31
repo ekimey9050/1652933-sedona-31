@@ -1,18 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="Sedona" content="">
   <link rel="icon" href="Favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
+  <link rel="stylesheet" href="Normalize.css">
+  <link rel="stylesheet" href="style.css">
   <title>Sedona</title>
 </head>
 
-<body>
+<body class="page-bogy">
   <header class="main-header">
-    <nav>
-      <a><img src="image/logo.svg" alt="Логотип сайта Седона"></a>
-      <ul>
+    <nav class="main-navigation">
+      <a class="main-header-logo"><img src="image/logo.svg" alt="Логотип сайта Седона"></a>
+      <ul class="site-navigation">
         <li><a href="blank.html">Информация</a></li>
         <li><a href="blank.html">Фото и видео</a></li>
         <li><a href="blank.html">Карта штата</a></li>
@@ -22,118 +25,165 @@
     </nav>
 
   </header>
-  <main>
-    <section>
-      <h1>SEDONA</h1>
+  <main class="container">
+    <section class="mainImg">
+      <h1 class="hidden">SEDONA</h1>
       <img src="image/mainImg.jpg" alt="Главное изображение города Седона" width="1200" height="453">
 
     </section>
-    <section>
-      <h3>Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
+    <section class="accession">
+
+      <h3 class="accession-title">Седона — небольшой городок в Аризоне,заслуживающий большего!</h3>
       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
-    <section>
-      <h3>Настоящийгородок</h3>
+    <section class="content">
+      <h3 class="title">Настоящийгородок</h3>
       <p>— №1 —</p>
       <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-      <img src="image/scenerySedona.png" alt="Пейзаж горододской жизни Седона" width="800" height="256">
+      <img class="content-image" src="image/scenerySedona.png" alt="Пейзаж горододской жизни Седона" width="800"
+        height="256">
     </section>
     <section>
-      <ul>
-        <li>
+      <ul class="features-list">
+        <li class="features-item">
           <img src="image/house.svg" width="74.69" height="72" alt="Рисунок дома">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li>
+        <li class="features-item">
           <img src="image/food.svg" width="74.07" height="69.96" alt="Еда, бургер">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li>
+        <li class="features-item">
           <img src="image/souvenirs.svg" width="63.98" height="76" alt="Подарок, сувенир">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного производства!</p>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="content-two">
       <img src="image/devilsBridge.png" alt="Мост Дьявола города Седона" width="800" height="256">
-      <h3>Там есть Мост дьявола</h3>
+      <h3 class="content-two">Там есть Мост дьявола</h3>
       <p>— №2 —</p>
       <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
     </section>
     <section>
-      <ul>
-        <li>
+      <ul class="edge-list">
+        <li class="edge-item">
           <h3>небольшая площадь</h3>
           <p>— №3 —</p>
           <p>все достопримечательности находятся очень близко</p>
         </li>
-        <li>
+        <li class="edge-item">
           <h3>красивая дорога</h3>
           <p>— №4 —</p>
           <p>ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
-        <li>
+        <li class="edge-item">
           <h3>мало туристов</h3>
           <p>— №5 —</p>
           <p>большинство едет в гранд каньон и толпится там</p>
         </li>
       </ul>
     </section>
-    <section>
+    <section class="search">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a href="blank.html">ПОИСК ГОСТИНИЦЫ В седоне</a>
-      <form action="https://echo.htmlacademy.ru" method="POST">
-        <p><label for="datearrival">Дата заезда:</label>
-          <input type="text" id="datearrival" value="24 апреля 2017">
-          <img src="image/calendar.svg" alt="Календарь">
-        </p>
-        <p><label for="dateexit">Дата выезда:</label>
-          <input id="dateexit" type="text" value="4 июля 2017">
-          <img src="image/calendar.svg" alt="Календарь">
-        </p>
-        <p><label for="adults">Взрослые:</label>
-          <button type="button">-</button>
-          <input type="number" value="2" min="1" max="5" id="adults">
-          <button type="button">+</button>
-          <label for="Children">Дети:</label>
-          <button type="button">-</button>
-          <input type="number" value="0" min="0" max="5" id="Children">
-          <button type="button">+</button>
-        </p>
-        <button type="submit">Найти</button>
-      </form>
+
+      <a href="blank.html" class="popup">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      <div class="search-form">
+        <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
+          <p><label for="datearrival">Дата заезда:</label>
+            <input class="data" type="text" id="datearrival" value="24 апреля 2017">
+            <svg class="popup-icon" width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
+              <path class="popup-icon" fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"
+                fill="#A9A9A9" />
+            </svg>
+          </p>
+          <p><label for="dateexit">Дата выезда:</label>
+            <input class="data" id="dateexit" type="text" value="4 июля 2017">
+            <svg class="popup-icon" width="21" height="23" viewBox="0 0 21 23" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.406 3.02498H19.251C20.217 3.02498 21 3.84698 21 4.86198V21.164C21 22.179 20.217 23 19.251 23H1.75C0.784 23 0 22.179 0 21.164V4.86198C0 3.84698 0.784 3.02498 1.75 3.02498H4.593V1.64798C4.593 1.26698 4.887 0.958984 5.25 0.958984C5.612 0.958984 5.906 1.26698 5.906 1.64798V3.02498H9.844V1.64798C9.844 1.26698 10.138 0.958984 10.501 0.958984C10.862 0.958984 11.156 1.26698 11.156 1.64798V3.02498H15.094V1.64798C15.094 1.26698 15.387 0.958984 15.75 0.958984C16.112 0.958984 16.406 1.26698 16.406 1.64798V3.02498ZM19.5646 21.484C19.6466 21.3979 19.691 21.2828 19.688 21.164H19.689V4.86198C19.689 4.60898 19.493 4.40298 19.252 4.40298H16.407V5.78098C16.407 6.16198 16.113 6.46998 15.751 6.46998C15.388 6.46998 15.095 6.16198 15.095 5.78098V4.40298H11.157V5.78098C11.157 6.16198 10.863 6.46998 10.502 6.46998C10.139 6.46998 9.845 6.16198 9.845 5.78098V4.40298H5.907V5.78098C5.907 6.16198 5.613 6.46998 5.251 6.46998C4.888 6.46998 4.594 6.16198 4.594 5.78098V4.40298H1.75C1.50263 4.40953 1.30696 4.61458 1.312 4.86198V21.164C1.30696 21.4114 1.50263 21.6164 1.75 21.623H19.251C19.3698 21.6201 19.4826 21.5701 19.5646 21.484Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4.59399 9.2251H7.21899V11.2911H4.59399V9.2251ZM4.59399 12.6681H7.21899V14.7351H4.59399V12.6681ZM7.21899 16.1121H4.59399V18.1781H7.21899V16.1121ZM9.18799 16.1121H11.813V18.1781H9.18799V16.1121ZM11.813 12.6681H9.18799V14.7351H11.813V12.6681ZM9.18799 9.2251H11.813V11.2911H9.18799V9.2251ZM16.406 16.1121H13.781V18.1781H16.406V16.1121ZM13.781 12.6681H16.406V14.7351H13.781V12.6681ZM16.406 9.2251H13.781V11.2911H16.406V9.2251Z"
+                fill="#A9A9A9" />
+            </svg>
+          </p>
+          <p><label for="adults">Взрослые:</label>
+            <button type="button">
+              <svg class="popup-icon" width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                <rect class="popup-icon" width="12" height="3" />
+              </svg></button>
+            <input class="control" type="text" value="2" min="1" max="5" id="adults">
+            <button type="button">
+              <svg class="popup-icon" width="11" height="11" viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                <path class="popup-icon" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+              </svg>
+            </button>
+            <label for="Children">Дети:</label>
+            <button type="button" class="button-popup">
+              <svg class="popup-icon" width="12" height="3" viewBox="0 0 12 3" xmlns="http://www.w3.org/2000/svg">
+                <rect class="popup-icon" width="12" height="3" />
+              </svg></button>
+            <input class="control" type="text" value="0" min="0" max="5" id="Children">
+            <button type="button" class="button-popup"><svg class="popup-icon" width="11" height="11"
+                viewBox="0 0 11 11" xmlns="http://www.w3.org/2000/svg">
+                <path class="popup-icon" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z" />
+              </svg></button>
+          </p>
+          <button type="submit" class="button-find">Найти</button>
+        </form>
+      </div>
     </section>
-    <section>
-      <h4>Карта поиска гостиницы</h4>
+    <section class="map">
+      <h4 class="hidden">Карта поиска гостиницы</h4>
       <img src="image/map.jpg" width="1199" height="473"
         alt="Местоположение Седона, между пересечением дорог: 89А и 179">
     </section>
   </main>
   <footer class="main-footer">
-    <section>
-      <h4>Контакты сайта Седона</h4>
+    <section class="contacts">
+      <h4 class="hidden">Контакты сайта Седона</h4>
       <p>
         #visitSEDONA
-        <a href="tel:+78005558628">+7-800-555-86-28</a>
+        <a class="contacts-phone" href="tel:+78005558628">+7-800-555-86-28</a>
       </p>
     </section>
-    <section>
-      <h4>Контакты в социальных сетях</h4>
-      <ul>
-        <li><a href="#"><img src="image/twitter.svg" width="46" height="48" alt="Твиттер"></a></li>
-        <li><a href="#"><img src="image/facebook.svg" width="46" height="48" alt="Фейсбук"></a></li>
-        <li>
-          <a href="#"><img src="image/youtube.svg" width="46" height="48" alt="Ютюб"></a>
-        </li>
+    <section class="contacts-social">
+      <h4 class="hidden">Контакты в социальных сетях</h4>
+      <ul class="social-list">
+        <li class="social-item"><a href="#" class="social-button">
+            <svg class="social-icon" width="46" height="48" viewBox="0 0 46 48" xmlns="http://www.w3.org/2000/svg">
+              <rect class="social-icon" width="46" height="48" />
+              <path
+                d="M25.95 17.1441C27.635 16.6481 28.934 17.4141 29.527 18.3231C30.2 18.0921 30.858 17.8421 31.538 17.6151C31.5249 18.3015 31.2117 18.9476 30.681 19.3831C31.366 19.5531 31.985 18.8921 31.985 18.8921C31.816 19.8921 30.979 20.6801 30.422 20.9161C30.191 27.6661 27.247 32.1331 20.345 31.9981H19.899C19.489 31.9981 15.735 31.5381 15.001 30.1111C17.272 30.3071 18.894 29.6891 19.694 28.9341C18.734 28.6341 17.015 28.4571 16.715 25.9841C17.064 26.0901 17.279 26.2121 17.905 26.1031C16.705 25.2471 15.374 24.5301 15.448 22.3301C15.733 22.6581 16.515 22.8661 16.788 22.8021C16.085 22.5611 14.818 19.4421 15.894 17.8501C17.712 19.7041 19.629 21.4561 23.046 21.6231C23.254 19.3301 24.183 17.7931 25.95 17.1441Z"
+                fill="white" />
+            </svg></a></li>
+        <li class="social-item"><a href="#" class="social-button">
+            <svg class="social-icon" width="46" height="48" viewBox="0 0 46 48" xmlns="http://www.w3.org/2000/svg">
+              <rect class="social-icon" width="46" height="48" />
+              <path d="M29 17V13H25C22.7909 13 21 14.7909 21 17V21H17V25H21V35H25V25H29V21H25V17H29Z" fill="white" />
+            </svg></a></li>
+        <li class="social-item"><a href="#" class="social-button">
+            <svg class="social-icon" width="46" height="48" viewBox="0 0 46 48" xmlns="http://www.w3.org/2000/svg">
+              <rect class="social-icon" width="46" height="48" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16 16H30C31.65 16 33 17.35 33 19V29C33 30.65 31.65 32 30 32H16C14.35 32 13 30.65 13 29V19C13 17.35 14.35 16 16 16ZM19.027 20.002V27.998L28.014 24L19.027 20.002Z"
+                fill="white" />
+            </svg>
+          </a></li>
       </ul>
     </section>
-    <section>
-      <h4>Веб-сайт htmlacademy</h4>
-      <p>
+    <section class="copyright">
+      <h4 class="hidden">Веб-сайт htmlacademy</h4>
+      <p class="copy">
         Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="image/logo_htmlacademy.png"
             alt="Сайт htmlacademy"></a>
       </p>

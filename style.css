@@ -1,0 +1,225 @@
+:root {
+    --basic-white:#FFFFFF;
+    --basik-black:#000000;
+    --basik-grey:#333333;
+    --basik-light-gray:#766357;
+    --basik-blue:#81B3D2;
+    --blue:#669EC0;
+    --dark-blue: #5496BD;
+    --basik-medium-gray:#666666;
+    --light-gray:#A9A9A9;
+    --gray-brown:#604E43;
+    --gray:#888888;
+    --brown:#503E33;
+    --gray-blue:#F2F2F2;
+
+}
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: var(--grey);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.main-navigation {
+    line-height: 26px;
+    color: var(--basik-black);
+    background-color: var(--basic-white);
+}
+.site-navigation {
+    list-style: none;
+    font-weight: bold;
+    
+}
+.site-navigation a {
+    color: var(--basik-black);
+}
+.site-navigation a:hover {
+    color:var(--basik-blue);
+}
+.site-navigation a:active {
+    color:var(--basik-black);
+    opacity: 30%;
+}
+.site-navigation a:visited {
+    color: var(--basik-light-gray);
+}
+.mainImg {
+    text-align: center;
+}
+.accession {
+    text-align:center;
+    line-height: 26px;
+}
+.accession-title {
+    font-size: 21px;
+}
+.accession p {
+    color: var(--basik-grey);
+}
+.content {
+    background-color: var(--basik-blue);
+    color: var(--basic-white);
+    text-align: center;
+}
+.content h3 {
+    font-size: 21px;
+}
+.features-list {
+    list-style: none;
+    text-align: center;
+}
+.features-list h3 {
+    color: var(--basik-black);
+    font-size: 21px;
+}
+.features-list p{
+    color: var(--basik-grey);
+}
+.content-two {
+    background-color: var(--basik-blue);
+    color: var(--basic-white);
+    text-align: center;
+}
+.content-two h3{
+    font-size: 21px;
+}
+.edge-list {
+    list-style: none;
+    text-align: center;
+}
+.edge-list h3 {
+    color: var(--basik-black);
+    font-size: 21px;
+}
+.edge-list p {
+    color: var(--basik-grey);
+}
+.search {
+    line-height: 24px;
+    text-align: center;
+}
+.search h2 {
+    font-size: 30px; 
+}
+.search p {
+    /*внешние отступы*/
+    margin-bottom: 24px;
+}
+.popup {
+    padding: 30px 125px;
+    background-color: var(--basik-light-gray);
+    color: var(--basic-white);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+}
+.popup:hover {
+    background-color: var(--gray-brown);
+}
+.popup:active {
+    background-color: var(--brown);
+    color:rgba(0,0,0, 0.3);
+}
+.search-form {
+    width: 568px;
+    height: 395px;
+    color: var(--basik-black);
+    background-color: var(--basic-white);
+    font-weight: bold;
+    line-height: 26px;
+}
+.search-form input {
+    background-color: var(--gray-blue);
+    border: none; 
+    font-weight: bold;
+}
+.search-form input:focus {
+    border: E5E5E5 solid 2px;
+}
+.search-form input:hover {
+    background-color: var(-);
+}
+.search-form .data {
+    width: 346px;
+    height:38px;
+}
+.popup-icon {
+    fill: var(--light-gray);
+}
+.popup-icon:hover {
+    fill:var(--basik-black);
+}
+.popup-icon:active {
+    fill:var(--basik-blue);
+}
+.control {
+    width: 36px;
+}
+.button {
+    border: none;
+}
+.popup-form .button-find {
+    width: 458px;
+    height: 58px;
+    background-color: var(--basik-blue);
+    color: var(--basic-white);
+    text-align: center;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.popup-form .button-find:hover {
+    background-color: var(--blue);
+}
+.popup-form .button-find:active {
+    background-color: var(--dark-blue);
+    color: var(--basic-white);
+    color: rgba(0,0,0, 0.3);
+}
+.map {
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+.contacts {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+}
+.contacts-phone {
+    text-decoration: none;
+    color: var(--basik-black);
+    fill: var(--basik-blue);
+}
+.social-list {
+    list-style: none;
+    text-align: center;
+}
+.social-icon {
+    fill: var(--basik-blue);
+}
+.social-icon:hover {
+    fill: var(--blue);
+}
+.social-icon:active {
+    fill: var(--dark-blue);
+}
+.copyright {
+    text-align: center;
+    line-height: 26px;
+}
