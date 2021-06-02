@@ -12,7 +12,9 @@
     --gray:#888888;
     --brown:#503E33;
     --gray-blue:#F2F2F2;
-
+    --beige:#EBEBEB;
+    --basic-neutral:#E5E5E5;
+    --gray-silver:#CACACA;
 }
 body {
   min-width: 960px;
@@ -147,10 +149,11 @@ img {
     font-weight: bold;
 }
 .search-form input:focus {
-    border: E5E5E5 solid 2px;
+    background-color: var(--basic-white);
+    border: var(--basic-neutral) solid 2px;
 }
 .search-form input:hover {
-    background-color: var(-);
+    background-color: var(--beige);
 }
 .search-form .data {
     width: 346px;
@@ -165,12 +168,33 @@ img {
 .popup-icon:active {
     fill:var(--basik-blue);
 }
-.control {
-    width: 36px;
+.control{
+    width: 38px;
+    height: 38px;
+    margin: 0;
+    
+    padding: 0;
+    text-align: center;
 }
+
+.button-minus {
+    position: relative;
+    left: 4px;
+    border: none;
+    width: 38px;
+    height: 38px;
+}
+.button-plus {
+    position: relative;
+    right: 4px;
+    border: none;
+    width: 38px;
+    height: 38px;
+}
+/*
 .button {
     border: none;
-}
+}*/
 .popup-form .button-find {
     width: 458px;
     height: 58px;
@@ -222,4 +246,137 @@ img {
 .copyright {
     text-align: center;
     line-height: 26px;
+}
+/*catalog*/
+.filter {
+    background-image: url(image/background-filter.jpg);
+    background-repeat: no-repeat;
+}
+.title {
+    color: var(--basic-white);
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.Group {
+    border: none;
+}
+.filter-list {
+    list-style: none;
+}
+.filter-input-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.filter-input-checkbox+label {
+    display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.filter-input-checkbox+label::before{
+    content: '';
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-image: url(image/checkbox-off.svg);
+  border-radius: 0.25em;
+  
+  /*
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid var(--basic-white);
+  border-radius: 0.25em;*/
+  margin-right: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /*
+  background-size: 50% 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
+}
+.filter-input-checkbox:checked+label::before {
+    background-image: url(image/checkbox-on.svg);
+    border: 2px solid var(--basic-white);
+   
+   
+    /*не изменяется размер псевдоэлемента*/
+}
+.option {
+    color: var(--basic-white);
+}
+/* сортировка стоимости в сутки */
+/*.container-filter {
+    border: 2px solid var(--basic-white);
+    width: 317;
+    height: 36px;
+}*/
+.
+.button-submit {
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px var(--basic-white) solid;
+    width: 137px;
+    height: 36px;
+    text-transform: uppercase;
+    color: var(--basic-white);
+}
+.sorting-title {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+}
+.picking {
+    font-size: 12px;
+    line-height: 18px;
+}
+.sorting-item {
+    color: var(--basik-black);
+    opacity: 0.3;
+}
+.sorting-item a {
+    border-bottom: 1px dotted var(--basik-blue); 
+}
+.sorting-item a:hover {
+    color: var(--basik-blue);
+}
+.sorting-item a:active {
+    color: var(--basik-black);
+    border: none;
+}
+.sorting-item a:visited {
+    color: var(--basik-blue);
+    border: none;
+}
+.sorting-side-item-plus {
+    fill: var(--gray-silver);
+}
+/*не работает*/
+.side-item-plus:hover {
+    fill: var(--basik-black);
+}
+.result-title {
+    font-size: 21px;
+    line-height: 26px;
+}
+.detail {
+    color: var(--basic-white);
+    font-weight: bold;
+    background-color: var(--basik-blue);
+    width: 110px;
+    height: 27px;
+    padding: 3px 17px;
+}
+.to-book {
+    color: var(--basic-white);
+    font-weight: bold;
+    background-color: var(--basik-light-gray);
+    width: 147px;
+    height: 27px;
+    padding: 3px 17px;
+}
+.rating {
+    color: var(--basik-medium-gray);
+    background-color: var(--gray-blue);
+    padding: 3px 12px 3px 15px;
+    height: 27px;
+    width: 110px;
 }

@@ -6,65 +6,66 @@
     <meta name="Sedona" content="">
     <link rel="icon" href="Favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic">
-
+    <link rel="stylesheet" href="Normalize.css">
+    <link rel="stylesheet" href="style.css">
     <title>Каталог гостиниц Седона</title>
 </head>
 
 <body class="page-bogy">
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-header-logo" href="file:///H:/Sedona/1652933-sedona-31/index.html"><img src="image/logo.svg"
-                    alt="Логотип сайта Седона"></a>
-            <ul class="site-navigation">
-                <li><a href="blank.html">Информация</a></li>
-                <li><a href="blank.html">Фото и видео</a></li>
-                <li><a href="blank.html">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
-            </ul>
-
+          <a class="main-header-logo"><img src="image/logo.svg" alt="Логотип сайта Седона"></a>
+          <ul class="site-navigation">
+            <li><a href="blank.html">Информация</a></li>
+            <li><a href="blank.html">Фото и видео</a></li>
+            <li><a href="blank.html">Карта штата</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+    
         </nav>
-
-    </header>
+    
+      </header>
     <main>
-        <section>
+        <section class="filter">
             <form class="filteres" action="https://echo.htmlacademy.ru" method="POST">
-                <fieldset>
-                    <legend>Инфраструктура:</legend>
-                    <ul>
+                <fieldset class="Group">
+                    <legend class="title">Инфраструктура:</legend>
+                    <ul class="filter-list">
                         <li class="filter-option filter-checkbox">
                             <input class="filter-input-checkbox filter-input" type="checkbox" id="pool" checked>
-                            <label for="pool">Бассейн</label>
+                            <label for="pool" class="option">Бассейн</label>
                         </li>
                         <li class="filter-option filter-checkbox">
                             <input class="filter-input-checkbox filter-input" type="checkbox" id="parking">
-                            <label for="parking">Парковка</label>
+                            <label for="parking" class="option">Парковка</label>
                         </li>
                         <li class="filter-option filter-checkbox">
                             <input class="filter-input-checkbox filter-input" type="checkbox" id="wi-fi">
-                            <label for="wi-fi">WI-FI</label>
+                            <label for="wi-fi" class="option">WI-FI</label>
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    <legend>Тип жилья:</legend>
-                    <ul>
+                <fieldset class="Group">
+                    <legend class="title">Тип жилья:</legend>
+                    <ul class="filter-list">
                         <li class="filter-option filter-checkbox">
                             <input class="filter-input-checkbox filter-input" type="checkbox" id="hotel" checked>
-                            <label for="hotel">Гостиница</label>
+                            <label for="hotel" class="option">Гостиница</label>
                         </li>
                         <li class="filter-option filter-checkbox">
                             <input class="filter-input-checkbox filter-input" type="checkbox" id="motel" checked>
-                            <label for="motel">Мотель</label>
+                            <label for="motel" class="option">Мотель</label>
                         </li>
                         <li class="filter-option filter-checkbox">
                             <input class="filter-input-checkbox filter-input" type="checkbox" id="apartments" checked>
-                            <label for="apartments">Апартаменты</label>
+                            <label for="apartments" class="option">Апартаменты</label>
                         </li>
                     </ul>
                 </fieldset>
-                <fieldset>
-                    <legend>Стоимость в сутки, Р:</legend>
-                    <ul>
+                <fieldset class="Group">
+                    <legend class="title">Стоимость в сутки, &#8381:</legend>
+                    <div class="container-filter">
+                    <ul class="filter-list">
                         <li class="filter-option filter-number">
                             <label for="min">ОТ</label>
                             <input class="filter-input-number filter-input" type="number" id="min">
@@ -73,26 +74,29 @@
                         </li>
                         <li class="filter-option filter-range"><input class="filter-input-range filter-input"
                                 type="range" min="0" max="3000"></li>
-                        <li><button class="button submit" type="submit">Показать</button></li>
+                        <li><button class="button-submit" type="submit">Показать</button></li>
                     </ul>
+                    </div>
                 </fieldset>
             </form>
         </section>
         <section class="sorting">
             <h2 class="sorting-title">НАЙДЕНО: 3</h2>
-            <p>СОРТИРОВКА:</p>
-            <ul class="sorting-list">
-                <li class="sorting-item"><a href="#">ПО ЦЕНЕ</a></li>
-                <li class="sorting-item"><a href="#">ПО ТИПУ</a></li>
-                <li class="soeting-item"><a href="#">ПО РЕЙТИНГУ</a></li>
+            <p class="picking">СОРТИРОВКА:</p>
+            <ul class="filter-list">
+                <li class="sorting-item picking"><a href="#">ПО ЦЕНЕ</a></li>
+                <li class="sorting-item picking"><a href="#">ПО ТИПУ</a></li>
+                <li class="sorting-item picking"><a href="#">ПО РЕЙТИНГУ</a></li>
             </ul>
-            <ul class="sorting-side-list">
+            <ul class="filter-list">
                 <!--Сортировка от большего к меньшему-->
-                <li class="sorting-side-item">
-                    <img src="image/up.svg" width="11" height="10" alt="Сортировка по возрастанию">
+                <li class="sorting-side-item-plus">
+                    <a href="#" class="side-item-plus"> <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                        </svg></a>
                 </li>
                 <li class="sorting-side-item">
-                    <img src="image/down.svg" width="11" height="10" alt="Сортировка по убыванию">
+                    <a href="#"><img src="image/down.svg" width="11" height="10" alt="Сортировка по убыванию"></a>
                 </li>
             </ul>
         </section>
@@ -103,11 +107,11 @@
                 <span class="result-desc">Гостиница</span>
                 <span>От 4000 р</span>
             </div>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a href="#" class="detail">Подробнее</a>
+            <a href="#" class="to-book">Забронировать</a>
             <div>
                 <img src="image/star4.svg" width="91" height="17" alt="4 Звезды">
-                <span>Рейтинг: 8,5</span>
+                <span class="rating">Рейтинг: 8,5</span>
             </div>
         </article>
         <article>
@@ -117,11 +121,11 @@
                 <span class="result-desc">Мотель</span>
                 <span class="result-price">От 3000 р</span>
             </div>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a href="#" class="detail">Подробнее</a>
+            <a href="#" class="to-book">Забронировать</a>
             <div>
                 <img src="image/star3.svg" width="66" height="17" alt="Три звезды">
-                <span>Рейтинг: 8,9</span>
+                <span class="rating">Рейтинг: 8,9</span>
             </div>
         </article>
         <article>
@@ -131,41 +135,55 @@
                 <span class="result-desc">Апартаменты</span>
                 <span class="result-price">От 2000 р</span>
             </div>
-            <a href="#">Подробнее</a>
-            <a href="#">Забронировать</a>
+            <a href="#" class="detail">Подробнее</a>
+            <a href="#" class="to-book">Забронировать</a>
             <div>
                 <img src="image/star2.svg" width="42" height="17" alt="Две звезды">
-                <span class="result-price">Рейтинг: 9,2</span>
+                <span class="rating">Рейтинг: 9,2</span>
             </div>
         </article>
     </main>
     <footer class="main-footer">
         <section class="contacts">
-            <h4>Контакты сайта Седона</h4>
-            <p>
-                #visitSEDONA
-                <a class="contacts-phone" href="tel:+78005558628">+7-800-555-86-28</a>
-            </p>
+          <h4 class="hidden">Контакты сайта Седона</h4>
+          <p>
+            #visitSEDONA
+            <a class="contacts-phone" href="tel:+78005558628">+7-800-555-86-28</a>
+          </p>
         </section>
         <section class="contacts-social">
-            <h4>Контакты в социальных сетях</h4>
-            <ul class="social-list">
-                <li class="social-item"><a href="#" class="social-button"><img src="image/twitter.svg" width="46"
-                            height="48" alt="Твиттер"></a></li>
-                <li class="social-item"><a href="#" class="social-button"><img src="image/facebook.svg" width="46"
-                            height="48" alt="Фейсбук"></a></li>
-                <li class="social-item"><a href="#" class="social-button"><img src="image/youtube.svg" width="46"
-                            height="48" alt="Ютюб"></a></li>
-            </ul>
+          <h4 class="hidden">Контакты в социальных сетях</h4>
+          <ul class="social-list">
+            <li class="social-item"><a href="#" class="social-button">
+                <svg class="social-icon" width="46" height="48" viewBox="0 0 46 48" xmlns="http://www.w3.org/2000/svg">
+                  <rect class="social-icon" width="46" height="48" />
+                  <path
+                    d="M25.95 17.1441C27.635 16.6481 28.934 17.4141 29.527 18.3231C30.2 18.0921 30.858 17.8421 31.538 17.6151C31.5249 18.3015 31.2117 18.9476 30.681 19.3831C31.366 19.5531 31.985 18.8921 31.985 18.8921C31.816 19.8921 30.979 20.6801 30.422 20.9161C30.191 27.6661 27.247 32.1331 20.345 31.9981H19.899C19.489 31.9981 15.735 31.5381 15.001 30.1111C17.272 30.3071 18.894 29.6891 19.694 28.9341C18.734 28.6341 17.015 28.4571 16.715 25.9841C17.064 26.0901 17.279 26.2121 17.905 26.1031C16.705 25.2471 15.374 24.5301 15.448 22.3301C15.733 22.6581 16.515 22.8661 16.788 22.8021C16.085 22.5611 14.818 19.4421 15.894 17.8501C17.712 19.7041 19.629 21.4561 23.046 21.6231C23.254 19.3301 24.183 17.7931 25.95 17.1441Z"
+                    fill="white" />
+                </svg></a></li>
+            <li class="social-item"><a href="#" class="social-button">
+                <svg class="social-icon" width="46" height="48" viewBox="0 0 46 48" xmlns="http://www.w3.org/2000/svg">
+                  <rect class="social-icon" width="46" height="48" />
+                  <path d="M29 17V13H25C22.7909 13 21 14.7909 21 17V21H17V25H21V35H25V25H29V21H25V17H29Z" fill="white" />
+                </svg></a></li>
+            <li class="social-item"><a href="#" class="social-button">
+                <svg class="social-icon" width="46" height="48" viewBox="0 0 46 48" xmlns="http://www.w3.org/2000/svg">
+                  <rect class="social-icon" width="46" height="48" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16 16H30C31.65 16 33 17.35 33 19V29C33 30.65 31.65 32 30 32H16C14.35 32 13 30.65 13 29V19C13 17.35 14.35 16 16 16ZM19.027 20.002V27.998L28.014 24L19.027 20.002Z"
+                    fill="white" />
+                </svg>
+              </a></li>
+          </ul>
         </section>
-        <section>
-            <h4>Веб-сайт htmlacademy</h4>
-            <p class="copy">
-                Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="image/logo_htmlacademy.png"
-                        alt="Сайт htmlacademy"></a>
-            </p>
+        <section class="copyright">
+          <h4 class="hidden">Веб-сайт htmlacademy</h4>
+          <p class="copy">
+            Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="image/logo_htmlacademy.png"
+                alt="Сайт htmlacademy"></a>
+          </p>
         </section>
-    </footer>
+      </footer>
 </body>
 
 </html>
