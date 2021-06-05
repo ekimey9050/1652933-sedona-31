@@ -17,7 +17,7 @@
     --gray-silver:#CACACA;
 }
 body {
-  min-width: 960px;
+    min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -27,6 +27,17 @@ body {
   color: var(--grey);
   text-transform: uppercase;
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  justify-content: center;
+}
+/*подложка сайта*/
+.body-container {
+    width: 1200px;
+    box-shadow: 0px 0px 15px 5px rgb(0 1 1 / 20%);
 }
 a {
     text-decoration: none;
@@ -35,10 +46,21 @@ img {
     max-width: 100%;
     height: auto;
 }
+/*Grid */
+.page {
+    height: 100%;
+}
 .main-navigation {
     line-height: 26px;
     color: var(--basik-black);
     background-color: var(--basic-white);
+    /*???*/
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+}
+.main-header-logo {
+
 }
 .site-navigation {
     list-style: none;
@@ -58,6 +80,11 @@ img {
 .site-navigation a:visited {
     color: var(--basik-light-gray);
 }
+/*центровщик*/
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
 .mainImg {
     text-align: center;
 }
@@ -67,21 +94,38 @@ img {
 }
 .accession-title {
     font-size: 21px;
+    margin-top: 42.5px;
+    margin-bottom: 16,5px;
 }
 .accession p {
     color: var(--basik-grey);
+    margin-bottom: 51px;
 }
 .content {
     background-color: var(--basik-blue);
     color: var(--basic-white);
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+   
+}
+.content-block {
+    justify-self: center;
+    min-width: 256px;
 }
 .content h3 {
     font-size: 21px;
 }
+/*не работают отступы*/
+.features .features-img{
+    padding-top: 69,2px;
+}
 .features-list {
     list-style: none;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
 .features-list h3 {
     color: var(--basik-black);
@@ -94,13 +138,22 @@ img {
     background-color: var(--basik-blue);
     color: var(--basic-white);
     text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
 }
-.content-two h3{
+.content-two-block {
+    justify-self: center;
+}
+.content-two-block h3{
     font-size: 21px;
+    text-align: center;
 }
 .edge-list {
     list-style: none;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 .edge-list h3 {
     color: var(--basik-black);
@@ -112,21 +165,27 @@ img {
 .search {
     line-height: 24px;
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
 .search h2 {
     font-size: 30px; 
+    margin-top: 58px;
 }
 .search p {
-    /*внешние отступы*/
+    /*внешние отступы не работают*/
     margin-bottom: 24px;
 }
 .popup {
-    padding: 30px 125px;
     background-color: var(--basik-light-gray);
     color: var(--basic-white);
     text-decoration: none;
     font-weight: bold;
     font-size: 21px;
+    width: 568px;
+    height: 86px;
+    justify-self: center;
 }
 .popup:hover {
     background-color: var(--gray-brown);
@@ -142,6 +201,10 @@ img {
     background-color: var(--basic-white);
     font-weight: bold;
     line-height: 26px;
+    box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+    justify-self: center;
+    margin-top: 55px;
+    padding-top: 0;
 }
 .search-form input {
     background-color: var(--gray-blue);
@@ -201,10 +264,12 @@ img {
     background-color: var(--basik-blue);
     color: var(--basic-white);
     text-align: center;
-    font-size: 26px;
+    font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 55px;
+    padding: 0;
 }
 .popup-form .button-find:hover {
     background-color: var(--blue);
@@ -219,6 +284,11 @@ img {
 }
 .hidden {
     display: none;
+}
+.main-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
 .contacts {
     font-size: 21px;
@@ -251,6 +321,20 @@ img {
 .filter {
     background-image: url(image/background-filter.jpg);
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+.filter-checkbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 73px;
+    padding-top: 26.5px;
+ 
+}
+.filter-checkbox-2 {
+    padding-right: 73px;
+    padding-top: 26.5px;
 }
 .title {
     color: var(--basic-white);
@@ -268,16 +352,20 @@ img {
     position: absolute;
     z-index: -1;
     opacity: 0;
+
 }
 .filter-input-checkbox+label {
     display: inline-flex;
   align-items: center;
   user-select: none;
+  
+  
 }
+/*пропадает боковая грань*/
 .filter-input-checkbox+label::before{
-    content: '';
+  content: '';
   display: inline-block;
-  width: 23px;
+  width: 27px;
   height: 23px;
   background-image: url(image/checkbox-off.svg);
   border-radius: 0.25em;
@@ -289,14 +377,15 @@ img {
   border-radius: 0.25em;*/
   margin-right: 16px;
   background-repeat: no-repeat;
-  background-position: center center;
   /*
   background-size: 50% 50%;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
 }
 .filter-input-checkbox:checked+label::before {
-    background-image: url(image/checkbox-on.svg);
-    border: 2px solid var(--basic-white);
+    background-image:url(image/checkbox.svg);
+    height: 23px;
+   /* background-image: url(image/checkbox-on.svg);
+    border: 2px solid var(--basic-white);*/
    
    
     /*не изменяется размер псевдоэлемента*/
@@ -305,14 +394,26 @@ img {
     color: var(--basic-white);
 }
 /* сортировка стоимости в сутки */
-/*.container-filter {
+
+.container-filter {
     border: 2px solid var(--basic-white);
-    width: 317;
-    height: 36px;
-}*/
-.
+    width: 317px;
+    height: 38px;
+    color: var(--basic-white);
+}
+
+.filter-input-number {
+    width: 50px;
+    text-align: center;
+    border: none;
+    line-height: 21px;
+    /*сделать белый цвет*/
+}
+.filter-input input[type="text"] {
+    background: transparent;
+}
 .button-submit {
-    background: rgba(255, 255, 255, 0.5);
+    background: transparent;
     border: 2px var(--basic-white) solid;
     width: 137px;
     height: 36px;
@@ -327,6 +428,12 @@ img {
 .picking {
     font-size: 12px;
     line-height: 18px;
+}
+.sorting {
+    display: flex;
+    grid-template-rows: 1fr;
+    padding-left: 73px;
+    padding-right: 73px;
 }
 .sorting-item {
     color: var(--basik-black);
@@ -346,12 +453,19 @@ img {
     color: var(--basik-blue);
     border: none;
 }
-.sorting-side-item-plus {
+.sorting-side-item-plus .side-item-plus {
     fill: var(--gray-silver);
 }
-/*не работает*/
-.side-item-plus:hover {
+/*нет стилей для выбранного значения*/
+.sorting-side-item-plus .side-item-plus:hover {
     fill: var(--basik-black);
+}
+.sorting-side-item-plus .side-item-plus:active {
+    fill: var(--basik-blue);
+}
+.article {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .result-title {
     font-size: 21px;

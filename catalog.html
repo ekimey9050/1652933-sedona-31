@@ -12,6 +12,7 @@
 </head>
 
 <body class="page-bogy">
+    <div class="body-container">
     <header class="main-header">
         <nav class="main-navigation">
           <a class="main-header-logo"><img src="image/logo.svg" alt="Логотип сайта Седона"></a>
@@ -27,6 +28,8 @@
       </header>
     <main>
         <section class="filter">
+            <div class="filter-checkbox">
+                <div class="Group-1">
             <form class="filteres" action="https://echo.htmlacademy.ru" method="POST">
                 <fieldset class="Group">
                     <legend class="title">Инфраструктура:</legend>
@@ -45,6 +48,8 @@
                         </li>
                     </ul>
                 </fieldset>
+            </div>
+            <div class="Group-2">
                 <fieldset class="Group">
                     <legend class="title">Тип жилья:</legend>
                     <ul class="filter-list">
@@ -62,13 +67,16 @@
                         </li>
                     </ul>
                 </fieldset>
+                </div>
+                </div>
+                <div class="filter-checkbox-2">
                 <fieldset class="Group">
                     <legend class="title">Стоимость в сутки, &#8381:</legend>
                     <div class="container-filter">
                     <ul class="filter-list">
                         <li class="filter-option filter-number">
                             <label for="min">ОТ</label>
-                            <input class="filter-input-number filter-input" type="number" id="min">
+                            <input class="filter-input-number filter-input" type="number" id="min" value="0">
                             <label for="max">ДО</label>
                             <input class="filter-input-number filter-input" type="number" id="max" value="3000">
                         </li>
@@ -77,7 +85,9 @@
                         <li><button class="button-submit" type="submit">Показать</button></li>
                     </ul>
                     </div>
+        
                 </fieldset>
+                </div>
             </form>
         </section>
         <section class="sorting">
@@ -91,8 +101,8 @@
             <ul class="filter-list">
                 <!--Сортировка от большего к меньшему-->
                 <li class="sorting-side-item-plus">
-                    <a href="#" class="side-item-plus"> <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                    <a href="#" class="side-item-plus"> <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 0L0 10H11L5.5 0Z"/>
                         </svg></a>
                 </li>
                 <li class="sorting-side-item">
@@ -100,6 +110,7 @@
                 </li>
             </ul>
         </section>
+        <div class="article">
         <article class="result">
             <img src="image/hotel4stars.png" width="135" height="90" alt="Amara Resort & Spa Гостиница 4 звезды">
             <h3 class="result-title">Amara Resort & Spa</h3>
@@ -142,6 +153,7 @@
                 <span class="rating">Рейтинг: 9,2</span>
             </div>
         </article>
+        </div>
     </main>
     <footer class="main-footer">
         <section class="contacts">
@@ -184,6 +196,7 @@
           </p>
         </section>
       </footer>
+      </div>
 </body>
 
 </html>
