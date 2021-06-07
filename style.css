@@ -97,7 +97,7 @@ img {
     margin-top: 42.5px;
     margin-bottom: 16,5px;
 }
-.accession p {
+.accession .paragraph {
     color: var(--basik-grey);
     margin-bottom: 51px;
 }
@@ -113,7 +113,7 @@ img {
     justify-self: center;
     min-width: 256px;
 }
-.content h3 {
+.content .title {
     font-size: 21px;
 }
 /*не работают отступы*/
@@ -127,11 +127,11 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
 }
-.features-list h3 {
+.features-list .title {
     color: var(--basik-black);
     font-size: 21px;
 }
-.features-list p{
+.features-list .paragraph{
     color: var(--basik-grey);
 }
 .content-two {
@@ -145,7 +145,7 @@ img {
 .content-two-block {
     justify-self: center;
 }
-.content-two-block h3{
+.content-two-block .title{
     font-size: 21px;
     text-align: center;
 }
@@ -155,11 +155,11 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-.edge-list h3 {
+.edge-list .title {
     color: var(--basik-black);
     font-size: 21px;
 }
-.edge-list p {
+.edge-list .paragraph {
     color: var(--basik-grey);
 }
 .search {
@@ -169,12 +169,11 @@ img {
     grid-template-columns: 1fr;
     justify-content: center;
 }
-.search h2 {
+.search .heading {
     font-size: 30px; 
     margin-top: 58px;
 }
-.search p {
-    /*внешние отступы не работают*/
+.search .paragraph {
     margin-bottom: 24px;
 }
 .popup {
@@ -235,7 +234,6 @@ img {
     width: 38px;
     height: 38px;
     margin: 0;
-    
     padding: 0;
     text-align: center;
 }
@@ -254,10 +252,7 @@ img {
     width: 38px;
     height: 38px;
 }
-/*
-.button {
-    border: none;
-}*/
+
 .popup-form .button-find {
     width: 458px;
     height: 58px;
@@ -323,26 +318,24 @@ img {
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr;
-   
 }
-.filter-checkbox {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 73px;
-    padding-top: 26.5px;
- 
+
+.filteres {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
 }
-.filter-checkbox-2 {
-    padding-right: 73px;
-    padding-top: 26.5px;
-}
+
 .title {
     color: var(--basic-white);
     line-height: 21px;
     font-size: 16px;
     font-weight: bold;
 }
-.Group {
+.infrastructure, 
+.type-housing,
+.housing-cost {
     border: none;
 }
 .filter-list {
@@ -361,7 +354,6 @@ img {
   
   
 }
-/*пропадает боковая грань*/
 .filter-input-checkbox+label::before{
   content: '';
   display: inline-block;
@@ -369,26 +361,12 @@ img {
   height: 23px;
   background-image: url(image/checkbox-off.svg);
   border-radius: 0.25em;
-  
-  /*
-  flex-shrink: 0;
-  flex-grow: 0;
-  border: 2px solid var(--basic-white);
-  border-radius: 0.25em;*/
   margin-right: 16px;
   background-repeat: no-repeat;
-  /*
-  background-size: 50% 50%;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));*/
 }
 .filter-input-checkbox:checked+label::before {
     background-image:url(image/checkbox.svg);
     height: 23px;
-   /* background-image: url(image/checkbox-on.svg);
-    border: 2px solid var(--basic-white);*/
-   
-   
-    /*не изменяется размер псевдоэлемента*/
 }
 .option {
     color: var(--basic-white);
@@ -407,7 +385,6 @@ img {
     text-align: center;
     border: none;
     line-height: 21px;
-    /*сделать белый цвет*/
 }
 .filter-input input[type="text"] {
     background: transparent;
