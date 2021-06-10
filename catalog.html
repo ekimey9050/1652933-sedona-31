@@ -94,12 +94,14 @@
             </section>
             <section class="sorting">
                 <h2 class="sorting-title">НАЙДЕНО: 3</h2>
+                <div class="sorting-list">
                 <p class="picking">СОРТИРОВКА:</p>
                 <ul class="filter-list">
                     <li class="sorting-item picking"><a href="#">ПО ЦЕНЕ</a></li>
                     <li class="sorting-item picking"><a href="#">ПО ТИПУ</a></li>
                     <li class="sorting-item picking"><a href="#">ПО РЕЙТИНГУ</a></li>
                 </ul>
+                </div>
                 <ul class="filter-list">
                     <!--Сортировка от большего к меньшему-->
                     <li class="sorting-side-item-plus">
@@ -118,46 +120,59 @@
             </section>
             <div class="article">
                 <article class="result">
-                    <img src="image/hotel4stars.png" width="135" height="90"
+                    <img class="imgresult" src="image/hotel4stars.png" width="135" height="90"
                         alt="Amara Resort & Spa Гостиница 4 звезды">
-                    <h3 class="result-title">Amara Resort & Spa</h3>
-                    <div>
-                        <span class="result-desc">Гостиница</span>
-                        <span>От 4000 р</span>
+                    <div class="result-description">
+                        <h3 class="result-title">Amara Resort & Spa</h3>
+                        <div class="details">
+                            <span class="result-desc">Гостиница</span>
+                            <span>От 4000 р</span>
+                        </div>
+                        <div class="actions">
+                            <a href="#" class="detail">Подробнее</a>
+                            <a href="#" class="to-book">Забронировать</a>
+                        </div>
                     </div>
-                    <a href="#" class="detail">Подробнее</a>
-                    <a href="#" class="to-book">Забронировать</a>
-                    <div>
-                        <img src="image/star4.svg" width="91" height="17" alt="4 Звезды">
+                    <div class="result-rating">
+                        <img class="star" src="image/star4.svg" width="91" height="17" alt="4 Звезды">
                         <span class="rating">Рейтинг: 8,5</span>
                     </div>
                 </article>
-                <article>
-                    <img src="image/motel3stars.png" width="135" height="90" alt="Desert Quail Inn Мотель 3 звезды">
-                    <h3 class="result-title">Desert Quail Inn</h3>
-                    <div>
+                <article class="result">
+                    <img class="imgresult" src="image/motel3stars.png" width="135" height="90"
+                        alt="Desert Quail Inn Мотель 3 звезды">
+                    <div class="result-description">
+                        <h3 class="result-title">Desert Quail Inn</h3>
+                        <div class="details">
                         <span class="result-desc">Мотель</span>
                         <span class="result-price">От 3000 р</span>
+                        </div>
+                        <div class="actions">
+                        <a href="#" class="detail">Подробнее</a>
+                        <a href="#" class="to-book">Забронировать</a>
+                        </div>
                     </div>
-                    <a href="#" class="detail">Подробнее</a>
-                    <a href="#" class="to-book">Забронировать</a>
-                    <div>
-                        <img src="image/star3.svg" width="66" height="17" alt="Три звезды">
+                    <div class="result-rating">
+                        <img class="star" src="image/star3.svg" width="66" height="17" alt="Три звезды">
                         <span class="rating">Рейтинг: 8,9</span>
                     </div>
                 </article>
-                <article>
-                    <img src="image/apartaments.jpg" width="135" height="90"
+                <article class="result">
+                    <img class="imgresult" src="image/apartaments.jpg" width="135" height="90"
                         alt="Villas at Poco Diablo апартаменты 2 звезды">
-                    <h3 class="result-title">Villas at Poco Diablo</h3>
-                    <div>
+                    <div class="result-description">
+                        <h3 class="result-title">Villas at Poco Diablo</h3>
+                        <div class="details">
                         <span class="result-desc">Апартаменты</span>
                         <span class="result-price">От 2000 р</span>
+                        </div>
+                        <div class="actions">
+                        <a href="#" class="detail">Подробнее</a>
+                        <a href="#" class="to-book">Забронировать</a>
+                        </div>
                     </div>
-                    <a href="#" class="detail">Подробнее</a>
-                    <a href="#" class="to-book">Забронировать</a>
-                    <div>
-                        <img src="image/star2.svg" width="42" height="17" alt="Две звезды">
+                    <div class="result-rating">
+                        <img class="star" src="image/star2.svg" width="42" height="17" alt="Две звезды">
                         <span class="rating">Рейтинг: 9,2</span>
                     </div>
                 </article>
@@ -167,7 +182,7 @@
             <section class="contacts">
                 <h4 class="hidden">Контакты сайта Седона</h4>
                 <p>
-                    #visitSEDONA
+                    #visitSEDONA<br>
                     <a class="contacts-phone" href="tel:+78005558628">+7-800-555-86-28</a>
                 </p>
             </section>
@@ -181,14 +196,18 @@
                                 <path
                                     d="M25.95 17.1441C27.635 16.6481 28.934 17.4141 29.527 18.3231C30.2 18.0921 30.858 17.8421 31.538 17.6151C31.5249 18.3015 31.2117 18.9476 30.681 19.3831C31.366 19.5531 31.985 18.8921 31.985 18.8921C31.816 19.8921 30.979 20.6801 30.422 20.9161C30.191 27.6661 27.247 32.1331 20.345 31.9981H19.899C19.489 31.9981 15.735 31.5381 15.001 30.1111C17.272 30.3071 18.894 29.6891 19.694 28.9341C18.734 28.6341 17.015 28.4571 16.715 25.9841C17.064 26.0901 17.279 26.2121 17.905 26.1031C16.705 25.2471 15.374 24.5301 15.448 22.3301C15.733 22.6581 16.515 22.8661 16.788 22.8021C16.085 22.5611 14.818 19.4421 15.894 17.8501C17.712 19.7041 19.629 21.4561 23.046 21.6231C23.254 19.3301 24.183 17.7931 25.95 17.1441Z"
                                     fill="white" />
-                            </svg></a></li>
+                            </svg>
+                        </a>
+                    </li>
                     <li class="social-item"><a href="#" class="social-button">
                             <svg class="social-icon" width="46" height="48" viewBox="0 0 46 48"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <rect class="social-icon" width="46" height="48" />
                                 <path d="M29 17V13H25C22.7909 13 21 14.7909 21 17V21H17V25H21V35H25V25H29V21H25V17H29Z"
                                     fill="white" />
-                            </svg></a></li>
+                            </svg>
+                        </a>
+                    </li>
                     <li class="social-item"><a href="#" class="social-button">
                             <svg class="social-icon" width="46" height="48" viewBox="0 0 46 48"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -205,8 +224,7 @@
                 <h4 class="hidden">Веб-сайт htmlacademy</h4>
                 <p class="copy">
                     Website by <a href="https://htmlacademy.ru/intensive/htmlcss">
-                        <img src="image/logo_htmlacademy.png" alt="Сайт htmlacademy">
-                    </a>
+                        <img src="image/logo_htmlacademy.png" alt="Сайт htmlacademy"></a>
                 </p>
             </section>
         </footer>
