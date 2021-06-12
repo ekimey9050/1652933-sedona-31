@@ -15,10 +15,10 @@
   <div class="body-container">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo"><img src="image/logo.svg" alt="Логотип сайта Седона"></a>
+        <a class="main-header-logo"><img class="main-header-logo" src="image/logo.svg" alt="Логотип сайта Седона"></a>
         <ul class="site-navigation">
           <li><a href="blank.html">Информация</a></li>
-          <li><a href="blank.html">Фото и видео</a></li>
+          <li class="photo"><a href="blank.html">Фото и видео</a></li>
           <li><a href="blank.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
@@ -100,7 +100,7 @@
         <a href="blank.html" class="popup">ПОИСК ГОСТИНИЦЫ В седоне</a>
         <div class="search-form">
           <form class="popup-form" action="https://echo.htmlacademy.ru" method="POST">
-            <p class="paragraph"><label for="datearrival">Дата заезда:</label>
+            <p class="paragraph"><label for="datearrival" class="popup-label">Дата заезда:</label>
               <input class="data" type="text" id="datearrival" value="24 апреля 2017">
               <svg class="popup-icon icon-date" width="21" height="23" viewBox="0 0 21 23"
                 xmlns="http://www.w3.org/2000/svg">
@@ -111,7 +111,7 @@
                   fill="#A9A9A9" />
               </svg>
             </p>
-            <p class="paragraph"><label for="dateexit">Дата выезда:</label>
+            <p class="paragraph"><label for="dateexit" class="popup-label">Дата выезда:</label>
               <input class="data" id="dateexit" type="text" value="4 июля 2017">
               <svg class="popup-icon icon-date" width="21" height="23" viewBox="0 0 21 23"
                 xmlns="http://www.w3.org/2000/svg">
@@ -199,11 +199,12 @@
       <section class="copyright">
         <h4 class="hidden">Веб-сайт htmlacademy</h4>
         <p class="copy">
-          Website by <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="image/logo_htmlacademy.png" alt="Сайт htmlacademy"></a>
+          <span class="website"> Website by </span><a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="image/logo_htmlacademy.png" alt="Сайт htmlacademy" class="logo-htmlacademy"></a>
         </p>
       </section>
     </footer>
+  </div>
   </div>
 </body>
 

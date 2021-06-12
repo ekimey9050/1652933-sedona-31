@@ -77,9 +77,12 @@ img {
     align-items: flex-start;
     position: relative;
     z-index: 4; 
-    top: -65px;  
+    top: -60px;  
     margin: 0;
     padding: 0;
+}
+.photo {
+    margin-right: 200px;
 }
 .site-navigation a {
     color: var(--basik-black);
@@ -140,7 +143,6 @@ img {
 .content .title {
     font-size: 21px;
 }
-/*не работают отступы*/
 .features .features-img{
     padding-top: 69,2px;
 }
@@ -209,7 +211,7 @@ img {
     margin-top: 58px;
 }
 .search .paragraph {
-    margin-bottom: 24px;
+    margin-bottom: 29px;
 }
 .popup {
     background-color: var(--basik-light-gray);
@@ -268,6 +270,10 @@ img {
     left: -35px;
     top: 5px;
 }
+.popup-label {
+    margin-right: 20px;
+    margin-left: 20px;
+}
 .popup-icon:hover {
     fill:var(--basik-black);
 }
@@ -284,14 +290,19 @@ img {
 .demography {
     display: flex;
     justify-content: space-between;
-    padding-left: 55px;
+    padding-top: 0;
+    padding-left: 50px;
+    margin-top: -10px;
+    margin-bottom: 0;
 }
 .demography-adults {
    width: 101px;
-   padding-right: 12px;
+   padding-right: 32px;
 }
 .demography-Children {
-    padding-left: 55px;
+   width: 68px;
+   margin-left: 53px;
+   margin-right: 20px;
 }
 .button-minus {
     position: relative;
@@ -320,6 +331,8 @@ img {
     text-transform: uppercase;
     margin: 55px;
     padding: 0;
+    margin-top: 54px;
+    border: none;
 }
 .popup-form .button-find:hover {
     background-color: var(--blue);
@@ -351,6 +364,7 @@ img {
     text-decoration: none;
     color: var(--basik-black);
     fill: var(--basik-blue);
+    margin-top: 9px;
 }
 .social-list {
     list-style: none;
@@ -372,6 +386,13 @@ img {
 .copyright {
     text-align: center;
     line-height: 26px;
+}
+.website {
+    position: relative;
+    top: -13px;
+}
+.logo-htmlacademy {
+    margin-left: 15px;
 }
 /*catalog*/
 .filter {
