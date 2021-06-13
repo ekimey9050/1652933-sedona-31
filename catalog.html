@@ -15,19 +15,17 @@
     <div class="body-container">
         <header class="main-header">
             <nav class="main-navigation">
-                <a class="main-header-logo">
-                    <img src="image/logo.svg" alt="Логотип сайта Седона">
-                </a>
-                <ul class="site-navigation">
-                    <li><a href="blank.html">Информация</a></li>
-                    <li><a href="blank.html">Фото и видео</a></li>
-                    <li><a href="blank.html">Карта штата</a></li>
-                    <li><a href="catalog.html">Гостиницы</a></li>
-                </ul>
-
+              <a class="main-header-logo"><img class="main-header-logo" src="image/logo.svg" alt="Логотип сайта Седона" width="138px" height="70px"></a>
+              <ul class="site-navigation">
+                <li class="site-item"><a href="blank.html">Информация</a></li>
+                <li class="photo"><a href="blank.html">Фото и видео</a></li>
+                <li class="state-map"><a href="blank.html">Карта штата</a></li>
+                <li class="hotels-item"><a href="catalog.html">Гостиницы</a></li>
+              </ul>
+      
             </nav>
-
-        </header>
+      
+          </header>
         <main>
             <section class="filter">
                 <div class="filter-checkbox">
@@ -77,14 +75,14 @@
                         <div class="container-filter">
                             <ul class="filter-list">
                                 <li class="filter-option filter-number">
-                                    <label for="min">ОТ</label>
+                                    <label class="filter-label" for="min">ОТ</label>
                                     <input class="filter-input-number filter-input" type="number" id="min" value="0">
-                                    <label for="max">ДО</label>
+                                    <label class="filter-label label-max" for="max">ДО</label>
                                     <input class="filter-input-number filter-input" type="number" id="max" value="3000">
                                 </li>
                                 <li class="filter-option filter-range"><input class="filter-input-range filter-input"
                                         type="range" min="0" max="3000"></li>
-                                <li><button class="button-submit" type="submit">Показать</button></li>
+                                <li class="filter-button"><button class="button-submit" type="submit">Показать</button></li>
                             </ul>
                         </div>
 

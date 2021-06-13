@@ -56,6 +56,7 @@ img {
     color: var(--basik-black);
     background-color: var(--basic-white);
     height: 56px;
+    width: 1200px;
     /*???*/
    /* display: grid;
     justify-content: center;
@@ -66,23 +67,45 @@ img {
     z-index: 3;
     display: flex;
     justify-content: center;
-
 }
 .site-navigation {
     list-style: none;
     font-weight: bold;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: center;
+    justify-content: space-between;
+    align-items: center;
     position: relative;
     z-index: 4; 
-    top: -60px;  
+    top: -75px;  
     margin: 0;
     padding: 0;
 }
+.site-item {
+    width: 20%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    align-self: center;
+}
+.site-item:first-child {
+    margin-left: 73px;
+}
+.site-item:first-child,
 .photo {
-    margin-right: 200px;
+    text-align: left;
+}
+.photo {
+    margin-right: 100px;
+    padding-right: 82px;
+}
+.state-map {
+    padding-left: 147px;
+    text-align: right;
+}
+.hotels-item {
+    text-align: right;
+    margin-right: 72px;
+    margin-left: 147px;
 }
 .site-navigation a {
     color: var(--basik-black);
@@ -114,8 +137,8 @@ img {
 }
 .accession-title {
     font-size: 21px;
-    margin-top: 42.5px;
-    margin-bottom: 16,5px;
+    margin-top: 43px;
+    margin-bottom: 17;
 }
 .accession .paragraph {
     color: var(--basik-grey);
@@ -144,7 +167,7 @@ img {
     font-size: 21px;
 }
 .features .features-img{
-    padding-top: 69,2px;
+    padding-top: 70px;
 }
 .features-list {
     list-style: none;
@@ -264,6 +287,13 @@ img {
 }
 .popup-icon {
     fill: var(--light-gray);
+}
+.popup-form .data {
+    padding-left: 13px;
+}
+.icon-minus {
+    position: relative;
+    top: -4px;
 }
 .icon-date {
     position: relative;
@@ -397,9 +427,11 @@ img {
 /*catalog*/
 .filter {
     background-image: url(image/background-filter.jpg);
+    height: 217px;
     background-repeat: no-repeat;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
 }
 
 .filteres {
@@ -419,22 +451,31 @@ img {
 .type-housing,
 .housing-cost {
     border: none;
+    margin-top: 26px;
+    margin-left: 72px;
+}
+.infrastructure {
+    margin-right: 47px;
 }
 .filter-list {
     list-style: none;
+    padding-left: 0;
+}
+.filter-option {
+    margin-bottom: 23px;
+}
+.filter-option:last-child {
+    margin-bottom: 38px;
 }
 .filter-input-checkbox {
     position: absolute;
     z-index: -1;
     opacity: 0;
-
 }
 .filter-input-checkbox+label {
     display: inline-flex;
   align-items: center;
   user-select: none;
-  
-  
 }
 .filter-input-checkbox+label::before{
   content: '';
@@ -454,22 +495,51 @@ img {
     color: var(--basic-white);
 }
 /* сортировка стоимости в сутки */
-
+.filter-checkbox-2 {
+    margin-left: auto;
+    margin-right: 72px;
+}
+.housing-cost .title {
+    margin-bottom: 11px;
+}
 .container-filter {
     border: 2px solid var(--basic-white);
     width: 317px;
     height: 38px;
     color: var(--basic-white);
+    margin-top: 11px;
 }
-
+.filter-number {
+    display: flex;
+    justify-content: space-around;
+    padding-top: auto;
+}
+.filter-label {
+    padding-left: 52px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+}
 .filter-input-number {
     width: 50px;
     text-align: center;
     border: none;
     line-height: 21px;
+    background-color: transparent;
+    color: var(--basic-white);
+}
+/*не работает, также нижние отступы не работают*/
+.label-max::before {
+    content: ' ';
+    background-image: url(image/delimter.svg);
+    display: inline-block;
+
 }
 .filter-input input[type="text"] {
     background: transparent;
+}
+.filter-button {
+    display: flex;
+    justify-content: center;
 }
 .button-submit {
     background: transparent;
@@ -494,6 +564,20 @@ img {
     grid-template-rows: 1fr;
     padding-left: 73px;
     padding-right: 73px;
+    margin-top: 29px;
+    padding-top: 0;
+    border-bottom: 1px solid var(--basic-neutral);
+}
+.sorting-list {
+    display: grid;
+    grid-template-columns: 75px 239px;
+    gap: 40px;
+}
+.sorting-list .filter-list {
+    display: grid;
+    grid-template-columns: 49px 49px 76px;
+    gap: 32px;
+    padding-top: 32px;
 }
 .sorting-item {
     color: var(--basik-black);
