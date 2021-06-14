@@ -73,19 +73,16 @@
                     <fieldset class="housing-cost">
                         <legend class="title">Стоимость в сутки, &#8381:</legend>
                         <div class="container-filter">
-                            <ul class="filter-list">
-                                <li class="filter-option filter-number">
-                                    <label class="filter-label" for="min">ОТ</label>
+                                    <label class="filter-label" for="min">ОТ
                                     <input class="filter-input-number filter-input" type="number" id="min" value="0">
-                                    <label class="filter-label label-max" for="max">ДО</label>
+                                    </label>
+                                    <label class="label-max" for="max">ДО
                                     <input class="filter-input-number filter-input" type="number" id="max" value="3000">
-                                </li>
-                                <li class="filter-option filter-range"><input class="filter-input-range filter-input"
-                                        type="range" min="0" max="3000"></li>
-                                <li class="filter-button"><button class="button-submit" type="submit">Показать</button></li>
-                            </ul>
-                        </div>
-
+                                    </label>
+                                </div>
+                                <div class="filter-option filter-range"><input class="filter-input-range filter-input"
+                                        type="range" min="0" max="3000"></div>
+                                <div class="filter-button"><button class="button-submit" type="submit">Показать</button></div>
                     </fieldset>
                 </div>
                 </form>
@@ -100,7 +97,7 @@
                         <li class="sorting-item picking"><a href="#">ПО РЕЙТИНГУ</a></li>
                     </ul>
                 </div>
-                <ul class="filter-list">
+                <ul class="filter-list increase-decrease">
                     <!--Сортировка от большего к меньшему-->
                     <li class="sorting-side-item-plus">
                         <a href="#" class="side-item-plus">
@@ -124,7 +121,7 @@
                         <h3 class="result-title">Amara Resort & Spa</h3>
                         <div class="details">
                             <span class="result-desc">Гостиница</span>
-                            <span>От 4000 р</span>
+                            <span class="result-price">От 4000 р</span>
                         </div>
                         <div class="actions">
                             <a href="#" class="detail">Подробнее</a>
@@ -133,7 +130,7 @@
                     </div>
                     <div class="result-rating">
                         <img class="star" src="image/star4.svg" width="91" height="17" alt="4 Звезды">
-                        <span class="rating">Рейтинг: 8,5</span>
+                        <div class="rating"><span>Рейтинг: 8,5</span></div>
                     </div>
                 </article>
                 <article class="result">
