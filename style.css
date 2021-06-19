@@ -278,8 +278,11 @@ img {
     line-height: 26px;
     box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
     justify-self: center;
-    margin-top: 0;
+    margin: 0;
     padding-top: 55px;
+    position: relative;
+    top: -480px;
+    left: 316px;
 }
 .search-form input {
     background-color: var(--gray-blue);
@@ -376,16 +379,22 @@ img {
     margin-top: 54px;
     border: none;
 }
-.popup-form .button-find:hover {
+ .button-find:hover {
     background-color: var(--blue);
 }
-.popup-form .button-find:active {
+.button-find:active {
     background-color: var(--dark-blue);
     color: var(--basic-white);
     color: rgba(255,255,255, 0.3);
 }
 .map {
     text-align: center;
+    height: 473px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.map-Sedona {
+    border:none;
 }
 .visually-hidden {
     position: absolute;
