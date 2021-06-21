@@ -600,7 +600,7 @@ img {
     left: 0;
   }
   /*нужно доработать*/
-  .taggle:hover {
+  .toggle:hover {
     border: 10px solid var(--basic-white);
     border-radius: 50%;
     background: #ABABAB;
