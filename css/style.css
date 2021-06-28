@@ -342,6 +342,13 @@ img {
     background-color: var(--brown);
     color:rgba(0,0,0, 0.3);
 }
+.modal {
+    display: none;
+    /*transform: translateY(-300px);
+    opacity: 0;
+    transition: 0.7s; */
+}
+
 .search-form {
     width: 458px;
     height: 285px;
@@ -363,7 +370,6 @@ img {
  height: 38px;
  margin-bottom: 29px;
 }
-
 .search-form input {
     background-color: var(--gray-blue);
     border: none; 
@@ -518,7 +524,7 @@ img {
     align-items: center;
 }
 .contacts {
-    width: 33.3%;
+    width: 33%;
     font-size: 21px;
     line-height: 34px;
     text-align: center;
@@ -531,7 +537,7 @@ img {
     margin-top: 9px;
 }
 .social-list {
-    width: 33.3%;
+    width: 33%;
     list-style: none;
     text-align: center;
     display: grid;
@@ -550,7 +556,7 @@ img {
     fill: var(--dark-blue);
 }
 .copyright {
-    width: 33.3%;
+    width: 33%;
     text-align: center;
     line-height: 26px;
     padding: 15px 33px 0px 0px;
